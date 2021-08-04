@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Roboto', sans-serif;
+  background-color: #E3E3E3;
+}
+h1{
+  text-align: center;
+  border-right: 9px solid #D03035 ;
+  border-left: 9px solid #0250BB;
+  margin: 4px 4px;
+  color: #0C1A25;
+  font-family: 'Amita', cursive;
+}
+.container{
+  width: 310px;
+  min-height: 640px;
+  height:fit-content;
+  background-image: url(./bg2.svg);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position-y: bottom;
+  /* display: grid;
+  justify-items: center; */
+  border: 4px solid #09131B;
+  border-radius: 8px;
+}
+.toDo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  height:min-content;
+  border: 2px solid rgb(66, 65, 77);
+  border-radius: 8px;
+  background:rgba(66, 65, 77, 0.8) ;
+  color: #EAECEC;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+
 }
 
-.App-link {
-  color: #61dafb;
+input[type="text"]{
+  height: 2rem;
+  width:13rem;
+  border-radius: 8px;
+  border:2px solid #00E5C7;
+  font-size:1rem;
+  font-family: 'Roboto', sans-serif;
+}
+input[type=text]:focus {
+  border-radius: 8px;
+  border:2px solid #00E5C7;
+  outline: 0;
+}
+input[type="submit"]{
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+  border-radius: 8px;
+  border: 3px solid #00BFA6;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  color: #00BFA6;
+  font-weight: 700;
+  font-size: 1.2rem;
+
+}
+input[type="checkbox"]{
+  width: 1.2rem;
+  height: 1.2rem;
+}
+input[type="checkbox"]:checked+label {
+  text-decoration: line-through;
+  color: #09131B;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+button{
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+  width: 2rem;
+  height:2rem;
+  border-radius: 8px;
+  border: 3px solid black;
+  text-align: center;
+  margin:5px;
+  cursor: pointer;
+  color: #D03035;
+  
+}
+
+button:hover {
+  border: 3px solid #D03035;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: 0;
 }
