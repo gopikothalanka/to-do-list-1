@@ -11,7 +11,7 @@ const App =()=>{
   }
   const submitHandler =e =>{
     e.preventDefault();
-    console.log(task);
+    // console.log(task);
     const newTodos=[...todos,task];
     setTodos(newTodos);
     setTask("");
@@ -29,6 +29,7 @@ return (
           <input type="text" name="task" value={task} onChange={changeHandler}  placeholder="Enter todo..."/> &nbsp;
           <input type="submit" value="ADD" name="Add"/>
         </form>
+        
         <TodoList todoList={todos} deleteHandler ={deleteHandler} />
 
       </div>
